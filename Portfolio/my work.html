@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+
+
+            width: 350px;
+            height: 350px;
+            padding: 35px;
+            background-color: aquamarine;
+            border-radius: 25px;
+            
+        }
+        .img img{
+            width: 250px;
+            height: 250px;
+        }
+        .img:hover{
+            transition: 0.3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    
+    <br/>
+    <div class="img" onmouseover="hoverimg()" onmouseout="removeimg()">
+        <h1>Its My Work Porton</h1>
+        <img src="./img/code.png">
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

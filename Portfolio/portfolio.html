@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="port.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    /* sredtfyguijokpiuhy */
+
+    </style>
+</head>
+<body>
+<div class="portfolio">
+        <!-- navigation bar -->
+  <section id="nav-bar">
+            
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <h1 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-1">BANDESHA</span>
+      </h1>
+      
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="./portfolio.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </header>
+
+  </section>
+        <!-- Body -->
+  <section id="mai-body">
+  <div class="container my-3 py-5">
+    <div class="body">
+      <div class="left my-5 py-5">
+          <h1 class=" header "> Hi, I'm  <span class="name">BANDESHA</span> </h1>
+          <span id="element"></span>                        
+          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary  px-4 me-md-2">Resume</button>
+          <a href="http://github.com/umairBANDESHA/" ><button type="button" class="btn btn-outline-light px-4">Github</button></a>
+        </div>
+      </div>
+      <div class="right">
+          <img src="./img/developer.png" class=" pic d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- SERVICES -->
+  <section id="service">
+    <h1> My Service </h1>
+    <div class="services">
+      <div class="service s1"  onmouseover="changeImg1('img/androidB.png')" onmouseout="changeBack1('img/androidW.png')">
+        
+        <img id="hover-image" src="img/androidW.png" alt="Original Image">
+        <h2>App Development</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, sunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, commodi.</p>
+      </div>
+      <div class="service s2" onmouseover="changeImg2('img/codeB.png')" onmouseout="changeBack2('img/codeW.png')">
+        <img src="./img/codeW.png" alt="Image of service 2">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam recusandae cum minima obcaecati quis rem nulla eveniet veniam illum.</p>
+      </div>
+      <div class="service s3" onmouseover="changeImg3('img/cropB.png')" onmouseout="changeBack3('img/cropW.png')">
+        <img src="./img/cropW.png" alt="Image of service 3">
+        <h2>UI/UX Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptate distinctio quis ut iusto aut sapiente quaerat. Mollitia, voluptatem unde?</p>
+      </div>
+    </div>
+</section>
+<!-- ABOUT ME -->
+<section id="aboutme">
+  <div class="about">
+    <img src="img/pic.jpg" alt="Image of me">
+    <div class="about-section">
+      <h2>About Me</h2>
+      <p>I am a software engineer with experience in web development, mobile development, and data science. I am passionate about using technology to solve real-world problems Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, minus porro corrupti impedit alias perspiciatis debitis, quam quos tempora itaque placeat ab iusto cum, quod dolore commodi dolores fugit sit ex! Laboriosam dolore velit nobis laudantium sed. Velit quasi obcaecati suscipit fuga reprehenderit natus, consectetur et autem, numquam consequuntur vel?</p>
+      <div class="skills">
+        <div class="about-item skill" >
+          <h5 onmouseover="addSkills()" onmouseout="removeSkills()"> Skills </h5>
+        </div>
+        <div class="about-item edu" >
+          <h5 onmouseover="addEdu()" onmouseout="removeEdu()"> Education </h5>
+       </div>
+        <div class="about-item exp" >
+          <h5 onmouseover="addExp()" onmouseout="removeExp()"> Experience </h5>
+        </div>
+       </div>
+    </div>
+  </div>
+</section>
+<!-- MY WORKS -->
+<section id="work">
+  <h1>My Works</h1>
+  <ul class="work">
+    <div class="my-work">
+      <img src="img/online banking system.jpg" alt="My Work 1">
+      <div class="overlay">
+        <h1>Online Booking System</h1>
+        <p>Currently Working On This Project</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="my-work">
+      <img src="img/calculator.jpg" alt="My Work 2">
+      <div class="overlay">
+        <h1>Calculator</h1>
+        <p>Discover more about this image</p>
+        <a href="../Calculator/calculator.html"> <button>Try IT</button></a>
+      </div>
+    </div>
+    <div class="my-work">
+      <img src="img/VAPT.png" alt="My Work 3">
+      <div class="overlay">
+        <h1>Vulnerability Assessment and Penetration Testing</h1>
+        <p>Future Plan</p>
+       <a href="https://en.wikipedia.org/wiki/Vulnerability_assessment"> <button>Learn More</button></a>
+      </div>
+    </div>
+  </ul>
+</section>
+       <!-- Footer -->
+  <section id="footer">
+            <div class="footer">
+                
+                  <h3>BANDESHA</h3>           
+                  <ul class="nav  list-unstyled">
+                    <li class=""><a class="text-body-secondary" href="https://www.instagram.com/bandesha_mair/" ><img src="./img/instagram (1).png" width="30px"></a></li>
+                    <li class=""><a class="text-body-secondary" href="https://www.facebook.com/umaiR.afzal.29/"><img src="./img/facebook (1).png" width="30px"></a></li>
+                    <li class=""><a class="text-body-secondary" href="https://www.twitter.com/home/bandesha_mair/" ><img src="./img/twitter (2).png" width="30px"></a></li>
+                  </ul>
+                
+              </div>
+  </section>
+
+
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+  <!-- Element to contain animated typing -->
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer', 'Fullstack Developer', 'React Developer'],
+      typeSpeed: 40,
+    });
+
+   
+
+
+  </script>
+</body>
+
+
+
+</body>
+</html>
